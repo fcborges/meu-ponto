@@ -1,8 +1,8 @@
 {
   "name": "Meu Ponto",
   "short_name": "Meu Ponto",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/meu-ponto/",
+  "scope": "/meu-ponto/",
   "display": "standalone",
   "background_color": "#eef2ff",
   "theme_color": "#172554",
@@ -13,5 +13,6 @@
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "id": "/meu-ponto/"
 }
