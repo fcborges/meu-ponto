@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
         pending=requested(getIntent());
         web=new WebView(this);setContentView(web);
         WebSettings settings=web.getSettings();
-        settings.setJavaScriptEnabled(true);settings.setDomStorageEnabled(true);
+        settings.setJavaScriptEnabled(true);settings.setDomStorageEnabled(true);web.addJavascriptInterface(new PontoBridge(this),"PontoAndroid");
         web.setWebViewClient(new WebViewClient(){@Override public void onPageFinished(WebView view,String url){loaded=true;attempt();}});
         web.setWebChromeClient(new WebChromeClient());
         web.loadUrl("https://fcborges.github.io/meu-ponto/");
